@@ -1,61 +1,117 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="utf-8" />
+    <meta id="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <!-- <div class="answerBox" id="display"></div> -->
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Calculator</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
+      <br />
 
-	<div class="calculator">
-		<div class="answerBox" id="display">
-			
-		</div>
+      <div id="wrapper" class="buttons">
+        <!-- <div>
+          <div class="numbers">
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
 
-		
-		<br>
+            <br />
 
-		<div id=wrapper class="buttons">
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
 
-			<div class="numbers">
-				<button id=7>7</button>
-				<button id=8>8</button>
-				<button id=9>9</button>
+            <br />
 
-				<br>
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
 
-				<button id=4>4</button>
-				<button id=5>5</button>
-				<button id=6>6</button>
+            <br />
 
-				<br>
+            <button id="C">C</button>
+            <button id="0">0</button>
+            <button id="=">=</button>
+          </div>
+          <div class="operators">
+            <button id="+">+</button>
+            <button id="-">-</button>
+            <button id="*">*</button>
+            <button id="/">/</button>
+          </div>
+        </div> -->
 
-				<button id=1>1</button>
-				<button id=2>2</button>
-				<button id=3>3</button>
+        <div>
+          <div>
+            <h1>Hollow tube calculator in mm3</h1>
+            <label>Input height in meters</label>
+            <input type="text" id="height" />
+            <label>Input width in meters</label>
+            <input type="text" id="width" />
+            <label>Input Wall thickness in meters</label>
+            <input type="text" id="walls" />
+            <label>Input Length in meters</label>
+            <input type="text" id="length" />
+            <button id="volume">calculate</button>
+            <div class="answerBox" id="vV"></div>
+          </div>
 
-				<br>
+          <h1>Weight calculator</h1>
+          <label>Input density of material kg/m^3</label>
+          <input type="text" id="density" />
+          <label>Volume in mm3</label>
+          <input type="text" id="vol" />
+          <button id="mass">calculate</button>
+          <div class="answerBox" id="mV"></div>
 
-				<button id="C">C</button>
-				<button id=0>0</button>
-				<button id="=">=</button>
-				
-			</div>
-			<div class="operators">
+          <br />
 
-				<button id="+">+</button>
-				<button id="-">-</button>
-				<button id="*">*</button>
-				<button id="/">/</button>
-			</div>
+          <h1>Range calculator</h1>
+          <label>Tabel height</label>
+          <input type="text" id="y0" />
+          <label>Launch angle (degree)</label>
+          <input type="text" id="theta" />
+          <label>Inital velocity</label>
+          <input type="text" id="v0" />
+          <div class="answerBox" id="rV"></div>
+          <button id="range">calculate</button>
 
-		</div>
+          <br />
 
-	<div id="truth">
-	</div>
+          <h1>Extension Calculator</h1>
+          <label>Projectlie mass</label>
+          <input type="text" id="Pm" />
+          <label>Arm mass</label>
+          <input type="text" id="Am" />
+          <label>Spring constant</label>
+          <input type="text" id="k" />
+          <label>Projectlie speed</label>
+          <input type="text" id="v0" />
+          <label>Spring length </label>
+          <input type="text" id="sl" />
+          <div class="answerBox" id="fV"></div>
+          <button id="force">calculate</button>
 
-	<script src="calculator.js"></script> 
-</body>
+          <br />
+
+          <h1>Spring Calculator</h1>
+          <label>wire width</label>
+          <input type="text" id="wireW" />
+          <label>coil diameter</label>
+          <input type="text" id="coil" />
+          <label>length</label>
+          <input type="text" id="l" />
+          <button id="Spring">calculate</button>
+
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
 </html>
